@@ -33,6 +33,10 @@
   font-size: 14px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 19px;
   line-height: 1.5;
@@ -54,6 +58,10 @@ body {
   margin-right: -50vw;
   right: -50%;
   justify-content: center;
+}
+
+.global-main {
+  width: 90vw;
 }
 
 .header-wrap {
@@ -333,7 +341,7 @@ body {
 }
 
 #loadmore {
-  width: 100vw;
+  width: 85vw;
   height: 11vh;
   margin: 30px 77px 30px 77px;
   border-radius: 15px;
@@ -418,7 +426,7 @@ footer nav ul {
 .footer-icons {
   display: flex;
   flex-direction: row;
-  padding-right: 0;
+  padding-left: 400px;
   margin-right: 0;
 }
 
@@ -458,4 +466,24 @@ footer nav ul {
   50% {
     border-color: transparent;
   }
+}
+
+#sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+}
+
+#sticky button {
+  background-color: rgb(102, 255, 47);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  width: 230px;
+  height: 45px;
+  z-index: 2;
+  margin-left: 79%;
+  margin-bottom: 26px;
+  font-size: 25px;
 }
