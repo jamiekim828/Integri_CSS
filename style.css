@@ -158,8 +158,12 @@ body {
 }
 
 .pinned-item-2 {
-  background-color: blue;
+  background: url('https://images.unsplash.com/photo-1566764581662-6cd06d381aef?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ')
+    blue;
+  background-blend-mode: multiply;
   color: white;
+  background-size: 100% 100%;
+  opacity: 0 - 1;
 }
 
 .pinned-item-3 {
@@ -167,8 +171,11 @@ body {
 }
 
 .pinned-item-4 {
-  background-color: purple;
+  background: url('https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ')
+    purple;
   color: white;
+  background-blend-mode: multiply;
+  background-size: 100% 100%;
 }
 
 .pinned-item-5 {
@@ -226,7 +233,9 @@ body {
 }
 
 .loop-2 {
-  background-image: url('https://images.unsplash.com/photo-1543248939-ff40856f65d4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ');
+  background: url('https://images.unsplash.com/photo-1543248939-ff40856f65d4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ')
+    rgb(255, 204, 0);
+  background-blend-mode: multiply;
 }
 
 .loop-3 {
@@ -281,16 +290,23 @@ body {
 
 .posts-wrapper div {
   cursor: pointer;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .creative1 {
-  background-color: rgb(206, 135, 206);
+  background: url('https://images.unsplash.com/photo-1487015307662-6ce6210680f1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ')
+    rgb(206, 135, 206);
   border-radius: 15px;
+  background-blend-mode: screen;
+  background-size: 100% 100%;
 }
 
 .creative2 {
-  background-color: rgb(245, 198, 110);
+  background: url('https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ')
+    rgb(231, 133, 35);
   border-radius: 15px;
+  background-blend-mode: screen;
+  background-size: 100% 100%;
 }
 
 .small-creative1 {
@@ -301,8 +317,12 @@ body {
 }
 
 .small-creative2 {
-  background: rgb(242, 133, 195);
+  background: url('https://images.unsplash.com/photo-1562185022-c0a7889d7fbb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ')
+    rgb(242, 133, 195);
   border-radius: 15px;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .small-creative3 {
@@ -329,10 +349,51 @@ body {
   background-color: rgb(242, 133, 195);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h3 {
+  font-size: 42px;
+}
+
 form,
 form h3,
 form div {
   text-align: center;
+}
+
+.subscribe-input {
+  width: 450px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(62, 62, 95);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+#input-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#input-box button {
+  width: 170px;
+  height: 80px;
+  border-style: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: rgb(62, 62, 95);
+  cursor: pointer;
+}
+
+#input-box button:hover {
+  background-color: rgb(242, 133, 195);
 }
 
 footer nav ul {
@@ -367,5 +428,34 @@ footer nav ul {
   margin: 15px;
 }
 .subscription-section {
+  font-family: 'Abril Fatface', cursive;
   padding-left: 80px;
+}
+
+.typing-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+#typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
