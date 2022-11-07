@@ -1,3 +1,4 @@
+/* fixed advertisement on top */
 .ad-fix {
   display: flex;
   position: fixed;
@@ -32,7 +33,9 @@
   right: 20px;
   font-size: 14px;
 }
+/* fixed ad end */
 
+/* body styling */
 * {
   box-sizing: border-box;
 }
@@ -60,10 +63,7 @@ body {
   justify-content: center;
 }
 
-.global-main {
-  width: 90vw;
-}
-
+/* header and navbar styling start*/
 .header-wrap {
   display: flex;
   flex-direction: row;
@@ -106,7 +106,14 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+/* header and navbar styling end */
 
+/* below header screen width adjust */
+.global-main {
+  width: 90vw;
+}
+
+/* 5 pinned posts style start*/
 .pinned-section {
   display: flex;
   flex-direction: row;
@@ -202,7 +209,9 @@ body {
   font-size: 22px;
   font-weight: bold;
 }
+/* 5 pinned posts style end*/
 
+/* left fixed div */
 .description-section {
   transform: rotate(-0.25turn);
   position: fixed;
@@ -212,6 +221,7 @@ body {
   font-weight: bold;
 }
 
+/* middle part with 3 big size posts styling */
 .loop-section {
   padding-left: 75px;
 }
@@ -256,6 +266,7 @@ body {
 .loop-3 {
   background-position: center;
 }
+/* middle part with 3 big size posts styling end */
 
 .blank-space {
   text-align: center;
@@ -266,6 +277,7 @@ body {
   padding-bottom: 25px;
 }
 
+/* last parts with 5 posts styling with grid*/
 .posts-wrapper {
   display: grid;
   grid-gap: 20px;
@@ -339,7 +351,9 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+/* last parts with 5 posts styling with grid end*/
 
+/* load more button */
 #loadmore {
   width: 85vw;
   height: 11vh;
@@ -357,6 +371,7 @@ body {
   background-color: rgb(242, 133, 195);
 }
 
+/* subscription form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -404,37 +419,6 @@ form div {
   background-color: rgb(242, 133, 195);
 }
 
-footer nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-
-.footer-nav a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 6px;
-  margin-right: 6px;
-}
-
-.footer-wrap {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-icons {
-  display: flex;
-  flex-direction: row;
-  padding-left: 400px;
-  margin-right: 0;
-}
-
-#tiny {
-  width: 20px;
-  height: 20px;
-  margin: 15px;
-}
 .subscription-section {
   font-family: 'Abril Fatface', cursive;
   padding-left: 80px;
@@ -467,7 +451,43 @@ footer nav ul {
     border-color: transparent;
   }
 }
+/* subscription styling end */
 
+/* footer  */
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 400px;
+  margin-right: 0;
+}
+
+#tiny {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+}
+/* footer end */
+
+/* right bottom sticky button */
 #sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -487,3 +507,4 @@ footer nav ul {
   margin-bottom: 26px;
   font-size: 25px;
 }
+/* sticky button end */
