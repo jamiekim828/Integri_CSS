@@ -235,9 +235,10 @@ body {
 
 .loop-item {
   height: 380px;
-  background-size: cover;
   border-radius: 15px;
   cursor: pointer;
+  overflow: hidden;
+  background-position: relative;
 }
 
 .loop-item h3 {
@@ -451,6 +452,7 @@ form div {
     border-color: transparent;
   }
 }
+
 /* subscription styling end */
 
 /* footer  */
@@ -508,3 +510,19 @@ footer nav ul {
   font-size: 25px;
 }
 /* sticky button end */
+
+/* animations */
+.pinned-items-1:hover,
+.pinned-item:hover {
+  transform: translateY(-4px);
+}
+
+.loop-item::before {
+  position: absolute;
+  background-size: cover;
+}
+
+.loop-item:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease-in-out;
+}
