@@ -249,17 +249,20 @@ body {
   background-image: url('https://images.unsplash.com/photo-1558697698-9300a84a6a99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ');
   background-color: transparent;
   color: white;
+  font-size: 33px;
 }
 
 .loop-2 {
   background: url('https://images.unsplash.com/photo-1543248939-ff40856f65d4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ')
     rgb(255, 204, 0);
   background-blend-mode: multiply;
+  font-size: 33px;
 }
 
 .loop-3 {
   background-image: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ');
   color: white;
+  font-size: 33px;
 }
 
 .loop-1,
@@ -312,6 +315,15 @@ body {
 .posts-wrapper div {
   cursor: pointer;
   font-family: 'Abril Fatface', cursive;
+  text-align: center;
+}
+
+.post-title {
+  font-size: 32px;
+}
+
+.post-author {
+  font-size: 15px;
 }
 
 .creative1 {
@@ -335,6 +347,7 @@ body {
   border-radius: 15px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  color: white;
 }
 
 .small-creative2 {
@@ -344,6 +357,7 @@ body {
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
 }
 
 .small-creative3 {
@@ -351,6 +365,7 @@ body {
   border-radius: 15px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  color: white;
 }
 /* last parts with 5 posts styling with grid end*/
 
@@ -525,4 +540,45 @@ footer nav ul {
 .loop-item:hover {
   transform: scale(1.04);
   transition: all 0.3s ease-in-out;
+}
+
+.box1:hover .post-title,
+.box2:hover .post-title,
+.box3:hover .post-title,
+.box4:hover .post-title,
+.box5:hover .post-title {
+  font-size: 35px;
+}
+
+.box1:hover span,
+.box2:hover span,
+.box3:hover span,
+.box4:hover span,
+.box5:hover span {
+  width: 100px;
+  height: 40px;
+}
+.box1:hover span:before,
+.box2:hover span:before,
+.box3:hover span:before,
+.box4:hover span:before,
+.box5:hover span:before {
+  content: '\2192';
+  width: 80px;
+  animation: span 1s infinite ease-out;
+}
+
+@keyframes span {
+  40% {
+    margin-left: 20px;
+  }
+  60% {
+    margin-left: 30px;
+  }
+  80% {
+    margin-left: 40px;
+  }
+  100% {
+    margin-left: 50px;
+  }
 }
